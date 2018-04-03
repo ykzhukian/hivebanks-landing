@@ -1,0 +1,59 @@
+.role {
+
+	border-radius: 5px;
+	padding: 20px;
+  padding-bottom: 30px;
+
+  &:not(.role--main) {
+
+  	cursor: pointer;
+
+  	@include transition();
+
+		&:hover {
+			@include box-shadow();
+			@include transformScale( 1.05 );
+		}
+  }
+
+  &--main {
+
+  	.role__icon {
+
+			img {
+				width: 150px;
+			}
+
+		}
+
+  }
+	
+	&__icon {
+
+		padding: 20px;
+		text-align: center;
+
+		img {
+			width: 120px;
+		}
+
+	}
+
+	.role__name {
+			
+			font-weight: 400;
+			font-size: 17px;
+			text-align: center;
+	
+		}
+
+}
+
+
+.main-role {
+
+	display: flex;
+	justify-content: space-between;
+	
+
+}

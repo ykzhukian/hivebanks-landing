@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss web/assets/css/application.scss web/assets/css/application.css",
+    "watch-css": "nodemon -e scss -x npm run build-css"
+  }
+}
