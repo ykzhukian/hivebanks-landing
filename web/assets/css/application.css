@@ -1246,7 +1246,7 @@ canvas {
   display: block;
   vertical-align: bottom;
   position: fixed;
-  top: 10%;
+  top: 5%;
   z-index: -1; }
 
 /* ---- particles.js container ---- */
@@ -1342,20 +1342,10 @@ p {
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#EC9944+0,F1AE6A+100 */
-  background: #EC9944;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #EC9944 0%, #F1AE6A 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #EC9944 0%, #F1AE6A 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #EC9944 0%, #F1AE6A 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EC9944', endColorstr='#F1AE6A',GradientType=0 );
-  /* IE6-9 */ }
+  transition: all 0.4s ease; }
   .header.scroll {
-    padding: 5px 0; }
+    padding: 5px 0;
+    background-color: #fff; }
     .header.scroll .logo {
       padding-top: 5px;
       width: 160px; }
@@ -1391,13 +1381,14 @@ p {
       .nav ul li:last-child {
         padding-right: 0; }
       .nav ul li a {
-        color: #fff;
-        position: relative; }
+        color: #EDA254;
+        position: relative;
+        font-weight: 400; }
         .nav ul li a:after {
           content: '';
-          background-color: #fff;
+          background-color: #EDA254;
           width: 0;
-          height: 1px;
+          height: 2px;
           left: 0;
           bottom: -4px;
           position: absolute;
@@ -1468,7 +1459,7 @@ p {
     padding-top: 120px;
     padding-bottom: 80px; }
   .section--intro {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 80px; }
   .section--color {
     background-color: rgba(237, 162, 84, 0.09); }
@@ -1599,7 +1590,8 @@ p {
       -webkit-transform: scale(1.05, 1.05);
       /* Chrome, Safari, Opera */
       -ms-transform: scale(1.05, 1.05);
-      /* IE 9 */ }
+      /* IE 9 */
+      background-color: #fff; }
   .role--main .role__icon img {
     width: 150px; }
   .role__icon {
@@ -1657,6 +1649,8 @@ p {
     font-size: 16px;
     text-align: right;
     padding-right: 30px !important; }
+    .role-table tr td:first-child p {
+      background-color: #fff; }
   .role-table tr td:last-child {
     padding-left: 30px !important; }
 
