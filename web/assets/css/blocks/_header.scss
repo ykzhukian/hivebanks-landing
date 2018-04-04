@@ -1,0 +1,106 @@
+.header {
+
+	color: #fff;
+	padding: 20px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+
+	@include transition();
+
+	&.scroll {
+
+		padding: 5px 0;
+		background-color: #fff;
+
+		.logo {
+			
+			padding-top: 5px;
+			width: 160px;
+
+		}
+
+		.nav {
+		  padding-top: 0;
+		}
+
+	}
+
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+
+.logo {
+
+	width: 250px;
+
+	@include transition();
+
+	img {
+		width: 100%;
+	}
+
+}
+
+.nav {
+
+  padding-top: 2px;
+
+	ul {
+		
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+
+		li {
+
+			padding: 15px;
+
+			&.active {
+				a {
+					&:after { 
+						width: 100%;
+					}
+				}
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			a {
+
+				color: $orange;
+				position: relative;
+				font-weight: 400;
+
+				&:after {
+					content: '';
+					background-color: $orange;
+					width: 0;
+					height: 2px;
+					left: 0;
+					bottom: -4px;
+					position: absolute;
+					transition-duration: 0.3s;
+				}
+
+				&:hover, &.active {
+					&:after { 
+						width: 100%;
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+}
