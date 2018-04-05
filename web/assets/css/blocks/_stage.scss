@@ -30,7 +30,7 @@
 			position: absolute;
 			right: -60px;
 			height: 2px;
-			background-color: $orange;
+			background-color: $theme-color;
 			width: 120px;
 			top: 50%;
 			opacity: 0.3;
@@ -50,7 +50,7 @@
 				content: '';
 				position: absolute;
 				height: 100px;
-				background-color: $orange;
+				background-color: $theme-color;
 				width: 2px;
 				left: 50%;
 				opacity: 0.3;

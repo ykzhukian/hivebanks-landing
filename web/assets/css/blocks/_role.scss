@@ -16,7 +16,7 @@
 		&:hover {
 			@include box-shadow();
 			@include transformScale( 1.05 );
-			background-color: #fff;
+			border: 1px solid #fff;
 		}
   }
 

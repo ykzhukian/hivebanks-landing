@@ -89,7 +89,7 @@
     right: 10px;
     z-index: 9999;
 
-    @include hamburger_menu(2px, 25px, 3px, $orange);
+    @include hamburger_menu(2px, 25px, 3px, $theme-color);
 
   }
 

@@ -1247,7 +1247,8 @@ canvas {
   vertical-align: bottom;
   position: fixed;
   top: 5%;
-  z-index: -1; }
+  z-index: 1;
+  pointer-events: none; }
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -1261,10 +1262,11 @@ canvas {
 html, body {
   margin: 0;
   padding: 0;
-  color: #383534;
+  color: #fff;
   letter-spacing: 0.5px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  background-color: #000; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -1277,19 +1279,21 @@ a {
   transition: all 0.4s ease; }
   a:link, a:visited, a:focus {
     text-decoration: none;
-    color: #383534; }
+    color: #fff; }
   a:hover {
     border-color: transparent;
-    color: #100f0f; }
+    color: #d9d9d9; }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
-  line-height: 1.1;
-  letter-spacing: 0.5px; }
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-weight: 300; }
   @media only screen and (min-width: 769px) {
     h1 {
-      font-size: 36px; } }
+      font-size: 38px; } }
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -1355,16 +1359,16 @@ p {
   transition: all 0.4s ease; }
   @media only screen and (max-width: 320px) {
     .header {
-      background-color: #fff; } }
+      background-color: #000; } }
   @media only screen and (max-width: 480px) and (min-width: 321px) {
     .header {
-      background-color: #fff; } }
+      background-color: #000; } }
   @media only screen and (max-width: 768px) and (min-width: 481px) {
     .header {
-      background-color: #fff; } }
+      background-color: #000; } }
   .header.scroll {
     padding: 5px 0;
-    background-color: #fff; }
+    background-color: #000; }
     .header.scroll .logo {
       padding-top: 5px;
       width: 160px; }
@@ -1409,12 +1413,12 @@ p {
       .nav ul li:last-child {
         padding-right: 0; }
       .nav ul li a {
-        color: #EDA254;
+        color: #fff;
         position: relative;
         font-weight: 400; }
         .nav ul li a:after {
           content: '';
-          background-color: #EDA254;
+          background-color: #fff;
           width: 0;
           height: 2px;
           left: 0;
@@ -1548,7 +1552,7 @@ p {
     content: '';
     width: 5%;
     height: 2px;
-    background-color: #EDA254;
+    background-color: #fff;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -1568,8 +1572,9 @@ p {
     background: url(../img/bg-pattern-2.svg) no-repeat;
     background-size: cover; }
   .section--roles {
-    padding-top: 140px;
-    padding-bottom: 80px; }
+    padding-bottom: 100px; }
+  .section--hero {
+    padding-top: 140px; }
   .section--role {
     padding-top: 120px;
     padding-bottom: 80px; }
@@ -1577,7 +1582,7 @@ p {
     padding-top: 60px;
     padding-bottom: 80px; }
   .section--color {
-    background-color: rgba(237, 162, 84, 0.09); }
+    background-color: rgba(166, 166, 166, 0.09); }
   .section--top100 {
     padding-top: 100px; }
   .section--sider {
@@ -1597,10 +1602,10 @@ p {
         display: none; } }
     .section--sider .intro-nav {
       width: 300px;
-      background-color: #fff;
       border-radius: 5px;
       padding: 15px;
       font-size: 14px;
+      border: 1px solid #fff;
       -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
       box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1); }
@@ -1611,14 +1616,17 @@ p {
         .section--sider .intro-nav ul li {
           margin: 10px 0; }
           .section--sider .intro-nav ul li a {
-            color: #EDA254;
+            color: #fff;
             border-bottom: 1px solid transparent; }
             .section--sider .intro-nav ul li a:hover, .section--sider .intro-nav ul li a.active {
-              border-bottom: 1px solid #EDA254; }
+              border-bottom: 1px solid #fff; }
 
 .intro-content {
   margin-top: 15px;
   margin-bottom: 20px; }
+
+.world-map {
+  opacity: 0.7; }
 
 .stage {
   padding: 50px 0; }
@@ -1639,7 +1647,7 @@ p {
       position: absolute;
       right: -60px;
       height: 2px;
-      background-color: #EDA254;
+      background-color: #fff;
       width: 120px;
       top: 50%;
       opacity: 0.3; }
@@ -1652,7 +1660,7 @@ p {
         content: '';
         position: absolute;
         height: 100px;
-        background-color: #EDA254;
+        background-color: #fff;
         width: 2px;
         left: 50%;
         opacity: 0.3;
@@ -1667,7 +1675,7 @@ p {
         content: '';
         position: absolute;
         height: 100px;
-        background-color: #EDA254;
+        background-color: #fff;
         width: 2px;
         left: 50%;
         opacity: 0.3;
@@ -1682,7 +1690,7 @@ p {
         content: '';
         position: absolute;
         height: 100px;
-        background-color: #EDA254;
+        background-color: #fff;
         width: 2px;
         left: 50%;
         opacity: 0.3;
@@ -1697,7 +1705,7 @@ p {
         content: '';
         position: absolute;
         height: 100px;
-        background-color: #EDA254;
+        background-color: #fff;
         width: 2px;
         left: 50%;
         opacity: 0.3;
@@ -1775,29 +1783,31 @@ p {
         width: 100%;
         outline: none;
         padding: 15px;
-        border: 1px solid #FDDEBF;
-        border-radius: 3px; }
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        background-color: transparent;
+        color: #fff; }
         .form-group .form-item input:focus, .form-group .form-item textarea:focus {
-          border: 1px solid #EDA254; }
+          border: 1px solid #fff; }
         .form-group .form-item input::-webkit-input-placeholder, .form-group .form-item textarea::-webkit-input-placeholder {
           font-size: 14px;
           font-family: "Roboto", sans-serif;
-          color: #FDDEBF;
+          color: #aaa;
           font-weight: 300; }
         .form-group .form-item input:-moz-placeholder, .form-group .form-item textarea:-moz-placeholder {
           font-size: 14px;
           font-family: "Roboto", sans-serif;
-          color: #FDDEBF;
+          color: #aaa;
           font-weight: 300; }
         .form-group .form-item input::-moz-placeholder, .form-group .form-item textarea::-moz-placeholder {
           font-size: 14px;
           font-family: "Roboto", sans-serif;
-          color: #FDDEBF;
+          color: #aaa;
           font-weight: 300; }
         .form-group .form-item input:-ms-input-placeholder, .form-group .form-item textarea:-ms-input-placeholder {
           font-size: 14px;
           font-family: "Roboto", sans-serif;
-          color: #FDDEBF;
+          color: #aaa;
           font-weight: 300; }
       .form-group .form-item textarea {
         height: 250px;
@@ -1844,7 +1854,7 @@ p {
       /* Chrome, Safari, Opera */
       -ms-transform: scale(1.05, 1.05);
       /* IE 9 */
-      background-color: #fff; }
+      border: 1px solid #fff; }
   @media only screen and (max-width: 320px) {
     .role--main {
       margin: auto; } }
@@ -1906,7 +1916,7 @@ p {
         height: 2px;
         top: 5px;
         right: 0;
-        background-color: #EDA254;
+        background-color: #fff;
         width: 100%;
         display: block;
         position: absolute;
@@ -1944,22 +1954,23 @@ p {
         right: 3px; } }
 
 .button {
-  background-color: #EDA254;
   padding: 10px 20px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #fff;
-  font-weight: 400;
+  color: #aaa;
   border-radius: 3px;
   cursor: pointer;
+  border: 1px solid #aaa;
+  background-color: transparent;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease; }
   .button:hover {
-    background-color: #DD8C3A;
+    border: 1px solid #fff;
+    color: #fff;
     -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1); }
@@ -1990,12 +2001,10 @@ p {
   .role-table tr td:first-child {
     width: 45%;
     font-weight: 400;
-    border-right: 1px solid #FDDEBF;
+    border-right: 1px solid #aaa;
     font-size: 16px;
     text-align: right;
     padding-right: 30px !important; }
-    .role-table tr td:first-child p {
-      background-color: #fff; }
     @media only screen and (max-width: 320px) {
       .role-table tr td:first-child {
         width: 100%;
@@ -2012,19 +2021,19 @@ p {
     padding-left: 30px !important; }
     @media only screen and (max-width: 320px) {
       .role-table tr td:last-child {
-        border-bottom: 1px solid #FDDEBF;
+        border-bottom: 1px solid #aaa;
         padding-left: 0 !important;
         padding-top: 0; } }
     @media only screen and (max-width: 480px) and (min-width: 321px) {
       .role-table tr td:last-child {
-        border-bottom: 1px solid #FDDEBF;
+        border-bottom: 1px solid #aaa;
         padding-left: 0 !important;
         padding-top: 0; } }
   .role-table tr:last-child td {
     border: none; }
 
 .copyright {
-  background-color: #FDDEBF;
+  background-color: #111;
   color: #fff;
   padding: 15px 0;
   font-size: 12px;

@@ -23,17 +23,19 @@
 				width: 100%;
 				outline: none;
 				padding: 15px;
-				border: 1px solid $light-orange;
+				border: 1px solid $light-theme-color;
 				border-radius: 3px;
+				background-color: transparent;
+				color: #fff;
 
 				&:focus {
-					border: 1px solid $orange;
+					border: 1px solid $theme-color;
 				}
 
 				@include placeholder {
 					font-size: 14px;
 					font-family: $font-body;
-					color: $light-orange;
+					color: $light-theme-color;
 					font-weight: 300;
 				}
 

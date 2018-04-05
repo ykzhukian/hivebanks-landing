@@ -3,7 +3,7 @@
 	text-align: center;
 	position: relative;
 	outline: none;
-	
+
 	&--intro {
 		margin-top: 0;
 		padding-top: 70px;
@@ -13,7 +13,7 @@
 		content: '';
 		width: 5%;
 		height: 2px;
-		background-color: $orange;
+		background-color: $theme-color;
 		position: absolute;
 		bottom: -10px;
 		left: 50%;
@@ -39,8 +39,11 @@
 	}
 
 	&--roles {
+		padding-bottom: 100px;
+	}
+
+	&--hero {
 		padding-top: 140px;
-		padding-bottom: 80px;
 	}
 
 	&--role {
@@ -55,7 +58,7 @@
 
 	&--color {
 
-		background-color: rgba(237, 162, 84, 0.09);
+		background-color: rgba(166, 166, 166, 0.09);
 
 	}
 
@@ -80,11 +83,10 @@
     .intro-nav {
 
 			width: 300px;
-			background-color: #fff;
 			border-radius: 5px;
 			padding: 15px;
 			font-size: 14px;
-
+			border: 1px solid #fff;
 
 			@include box-shadow();
 
@@ -99,11 +101,11 @@
 					margin: 10px 0;
 
 					a {
-						color: $orange;
+						color: $theme-color;
 						border-bottom: 1px solid transparent;
 
 						&:hover, &.active {
-							border-bottom: 1px solid $orange;
+							border-bottom: 1px solid $theme-color;
 						}
 					}
 
@@ -121,6 +123,12 @@
 
 	margin-top: 15px;
 	margin-bottom: 20px;
+
+}
+
+.world-map {
+
+	opacity: 0.7;
 
 }
 

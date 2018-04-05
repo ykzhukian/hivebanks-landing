@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+  $('.header__hamburger').click(function() {
+
+      $(this).toggleClass('hamburger--active');
+      $('.nav').toggleClass('active');
+
+  });
 	
 
 });

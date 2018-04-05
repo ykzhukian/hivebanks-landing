@@ -1,20 +1,21 @@
 .button {
 
-	background-color: $orange;
 	padding: 10px 20px;
 	outline: none;
 	border: none;
 	font-size: 18px;
-	color: #fff;
-	font-weight: 400;
+	color: $light-theme-color;
 	border-radius: 3px;
 	cursor: pointer;
+	border: 1px solid $light-theme-color;
+	background-color: transparent;
 
 	@include transition();
 
 	&:hover {
 
-		background-color: $dark-orange;
+		border: 1px solid #fff;
+		color: #fff;
 
 		@include box-shadow();
 
