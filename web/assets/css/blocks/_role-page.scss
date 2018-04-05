@@ -6,6 +6,12 @@
 
   tr {
 
+  	@include respond-to(xs, sm) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;		
+		}
+
   	td {
   		font-size: 15px;
 	  	padding: 15px 0;
@@ -34,12 +40,31 @@
 				background-color: #fff;
 			}
 
+			@include respond-to(xs, sm) {
+				width: 100%;
+				border-right: none;
+				text-align: left;
+				padding-bottom: 0;
+			}
+
 		}
 
 		td:last-child {
 
 			padding-left: 30px !important;
 
+			@include respond-to(xs, sm) {
+				border-bottom: 1px solid $light-orange;
+				padding-left: 0 !important;
+				padding-top: 0;
+			}
+
+		}
+
+		&:last-child {
+			td {
+				border: none;
+			}
 		}
 
   }

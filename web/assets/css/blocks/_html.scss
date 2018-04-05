@@ -48,6 +48,13 @@ h1 {
 h2 {
   font-family: $font-heading;
   font-size: 32px;
+
+  @include respond-to(xs, sm) {
+    font-size: 26px;
+    br {
+      display: none;
+    }
+  }
 }
 
 h3 {

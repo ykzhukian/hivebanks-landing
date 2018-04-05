@@ -73,6 +73,10 @@
     width: 100%;
     z-index: 999;
 
+    @include respond-to(xs, sm, md) {
+      display: none;
+    }
+
     .intro-nav {
 
 			width: 300px;

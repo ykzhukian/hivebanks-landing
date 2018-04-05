@@ -1,8 +1,11 @@
 .role {
 
 	border-radius: 5px;
-	padding: 20px;
   padding-bottom: 30px;
+
+	@include respond(md) {
+		padding: 20px;
+	}
 
   &:not(.role--main) {
 
@@ -18,6 +21,10 @@
   }
 
   &--main {
+
+  	@include respond-to(xs, sm, md) {
+  		margin: auto;
+  	}
 
   	.role__icon {
 
@@ -56,5 +63,13 @@
 	display: flex;
 	justify-content: space-between;
 	
+
+}
+
+.main-role__pattern {
+
+	@include respond-to(xs, sm, md) {
+		display: none;
+	}
 
 }

@@ -48,6 +48,21 @@
 
 	}
 
+	@include respond-to(xs, sm) {
+
+		width: 100%;
+
+		&-group {
+			flex-direction: column;
+
+			.form-item:not(:first-child) {
+				margin-left: 0px;
+				margin-top: 20px;
+			}
+		}
+
+	}
+
 }
 
 

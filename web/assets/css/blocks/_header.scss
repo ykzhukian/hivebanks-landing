@@ -8,6 +8,10 @@
 
 	@include transition();
 
+	@include respond-to(xs, sm, md) {
+		background-color: #fff;
+	}
+
 	&.scroll {
 
 		padding: 5px 0;
@@ -36,6 +40,10 @@
 .logo {
 
 	width: 250px;
+
+	@include respond-to(xs, sm, md) {
+		width: 200px;
+  }
 
 	@include transition();
 
@@ -102,5 +110,42 @@
 		}
 
 	}
+
+	@include respond-to(xs, sm, md) {
+		
+		// display: none;
+		height: 100vh;
+		background-color: #fff;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 58px;
+		text-align: center;
+
+		max-height: 0;
+		overflow: hidden;
+
+		@include transition();
+
+		ul {
+
+			flex-direction: column;
+			padding-top: 70px;
+
+			li {
+				padding: 20px 0;
+
+				a {
+					font-size: 18px;
+				}
+			}
+
+		}
+
+
+		&.active {
+			max-height: 100vh;
+		}
+  }
 
 }

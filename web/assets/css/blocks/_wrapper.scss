@@ -21,6 +21,11 @@
     width: 65%;
     float: right;
 
+    @include respond-to(xs, sm, md) {
+      width: 100%;
+      float: none;
+    }
+
   }
 
 }
