@@ -30,6 +30,12 @@
 
 			img {
 				width: 150px;
+
+				@include respond-to(xs, sm) {
+
+					width: 80px;
+
+				}
 			}
 
 		}
@@ -43,6 +49,12 @@
 
 		img {
 			width: 120px;
+
+			@include respond-to(xs, sm) {
+
+				width: 80px;
+
+			}
 		}
 
 	}
